@@ -7,14 +7,14 @@ import com.intellij.ui.AnActionButtonRunnable;
 import com.intellij.ui.IdeBorderFactory;
 import com.intellij.ui.ToolbarDecorator;
 import com.intellij.ui.components.JBList;
+import org.jetbrains.annotations.NotNull;
+
+import javax.swing.*;
 import java.util.Collection;
 import java.util.Enumeration;
 import java.util.Set;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
-import javax.swing.DefaultListModel;
-import javax.swing.JPanel;
-import org.jetbrains.annotations.NotNull;
 
 class FileMaskPanel extends JPanel {
 

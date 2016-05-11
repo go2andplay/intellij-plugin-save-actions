@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <idea-plugin version="2">
 
     <id>com.dubreuia</id>
@@ -66,14 +68,17 @@
 
     <idea-version since-build="135"/>
 
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true" config-file="plugin-java.xml">com.intellij.modules.java</depends>
+
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.dubreuia.model.Storage"/>
-        <applicationConfigurable instance="com.dubreuia.ui.Configuration"/>
+      <applicationService serviceImplementation="com.dubreuia.model.Storage"/>
+      <applicationConfigurable id="settings.saveactions" instance="com.dubreuia.ui.Configuration"/>
     </extensions>
 
     <application-components>
         <component>
-            <implementation-class>com.dubreuia.Component</implementation-class>
+            <implementation-class>com.dubreuia.core.Component</implementation-class>
         </component>
     </application-components>
 

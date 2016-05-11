@@ -1,13 +1,15 @@
 package com.dubreuia.utils;
 
-import static com.dubreuia.SaveActionManager.LOGGER;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.psi.PsiFile;
+
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
+
+import static com.dubreuia.core.SaveActionManager.LOGGER;
 
 public class PsiFiles {
 
